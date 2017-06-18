@@ -39,7 +39,7 @@ gulp.task('images', function() {
         // take images from the folder
         .src(paths.src+paths.folder+type.folder+'/**/*')
     
-        // resizing images according to specifed before dimensions
+        // resizing images according to specifed dimensions
         .pipe(imageResize(resize_settings))
         
         // optimizing the images
